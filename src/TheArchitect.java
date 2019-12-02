@@ -3,14 +3,12 @@ import javax.swing.*;
 
 public class TheArchitect extends JFrame {
 
-    public void setExit(int x, int y)//records the location of the exit so we can show it when its time
-    {
+    public void setExit(int x, int y) {
         WallXCord = x;
         WallYCord = y;
     }
 
-    public void showWall()//used when its time to show the exit.
-    {
+    public void showWall() {
         updatedMatrix[WallXCord][WallYCord] = "E";
     }
 

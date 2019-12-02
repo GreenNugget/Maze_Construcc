@@ -61,22 +61,22 @@ public class GameGui extends JFrame implements ActionListener {
         public void keyPressed(KeyEvent theEvent) {
             switch (theEvent.getKeyCode()) {
                 case KeyEvent.VK_UP: {
-                    Architect.playerMove(-1, 0, guiMatrix, fileLoad.dimondCount());
+                    Architect.playerMove(-1, 0, guiMatrix, fileLoad.totalOfDiamonds());
                     chargeNextLevel();
                     break;
                 }
                 case KeyEvent.VK_DOWN: {
-                    Architect.playerMove(1, 0, guiMatrix, fileLoad.dimondCount());
+                    Architect.playerMove(1, 0, guiMatrix, fileLoad.totalOfDiamonds());
                     chargeNextLevel();
                     break;
                 }
                 case KeyEvent.VK_LEFT: {
-                    Architect.playerMove(0, -1, guiMatrix, fileLoad.dimondCount());
+                    Architect.playerMove(0, -1, guiMatrix, fileLoad.totalOfDiamonds());
                     chargeNextLevel();
                     break;
                 }
                 case KeyEvent.VK_RIGHT: {
-                    Architect.playerMove(0, 1, guiMatrix, fileLoad.dimondCount());
+                    Architect.playerMove(0, 1, guiMatrix, fileLoad.totalOfDiamonds());
                     chargeNextLevel();
                     break;
                 }
@@ -127,7 +127,7 @@ public class GameGui extends JFrame implements ActionListener {
                 }
             }//end double for loop
             timeCalc = new TimeCalculator();//create the time calculator used to determine how much time each level is given.
-            timeCalc.calcTimeforMaze(fileLoad.dimondCount(), fileLoad.getMatrixSizeRow(), fileLoad.getMatrixSizeColumn());//let time calculator know the parameters of the game
+            timeCalc.playerTimeForLevel(fileLoad.totalOfDiamonds(), fileLoad.getMatrixSizeRow(), fileLoad.getMatrixSizeColumn());//let time calculator know the parameters of the game
             timeLeft = timeCalc.getMinutes();//get the minutes allowed for the level
             ix = timeCalc.getSeconds();//get the seconds allowed for the level;
             jx = 0;//reset the variable used for keeping time to zero since its a new level
