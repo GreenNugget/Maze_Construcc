@@ -120,8 +120,7 @@ public class FileLoader {
 
     private int exitXCord = 0;
     private int exitYCord = 0;
-    ;
-private String[][] GameMatrix;
+    private String[][] GameMatrix;
     private int column;
     private int row;
 
