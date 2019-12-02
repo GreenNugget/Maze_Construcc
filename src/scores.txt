@@ -42,9 +42,3 @@ PlayerName: null Total Time for Levels:0:0(Minutes:Seconds)Level Reached:*1
 PlayerName: null Total Time for Levels:0:0(Minutes:Seconds)Level Reached:*1
 
 PlayerName: null Total Time for Levels:0:0(Minutes:Seconds)Level Reached:*1
-PlayerName: null
-Total Time for Levels:1:50(Minutes:Seconds)
-Level Reached:*2
-
------------------------------------------
-

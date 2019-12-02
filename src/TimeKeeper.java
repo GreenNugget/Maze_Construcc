@@ -1,6 +1,6 @@
 public class TimeKeeper
 {
-    public void TimeKeeper(int min, int sec)
+    public void TimeKeeper(int min, int sec)//a class to keep track of the total seconds and minuntes the player has used to get to a level
 	{ 
 	   if(sec + seconds <=60)
 	    {
@@ -27,4 +27,4 @@ public class TimeKeeper
 	
 int minutes=0; 
 int seconds=0;
-}
+}//end class

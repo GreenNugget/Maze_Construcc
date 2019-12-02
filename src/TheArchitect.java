@@ -15,8 +15,8 @@ public class TheArchitect extends JFrame {
     }
 
     public void playerMove(int xScale, int yScale, String[][] currentMatrix, int totalDimonds) throws StupidAssMove {
-        globalTotalDimonds = totalDimonds; //use this later for the gui dimond count
-        nextLevel(false); //dont go to the next level yet.
+        globalTotalDimonds = totalDimonds;
+        nextLevel(false);
         getPlayerPosition(currentMatrix);
         CoordinatesSystem coordinates = new CoordinatesSystem(currentMatrix, xScale, yScale, playerCordX, playerCordY);
         if (coordinates.isHiddenDimond() || coordinates.isDiamond()) {
@@ -26,7 +26,7 @@ public class TheArchitect extends JFrame {
         } else if (coordinates.isExit()) {
             nextLevel(true);
         } else if (!coordinates.isNothing()) {
-            throw new AssertionError("Te chocaste :c", null);
+            throw new StupidAssMove("Ass Hole hit wall!");
         }
         coordinates.movePlayer();
 
@@ -57,7 +57,7 @@ public class TheArchitect extends JFrame {
 
         public StupidAssMove(String event) {
             JFrame frame = new JFrame("Warning");
-            JOptionPane.showMessageDialog(frame, "You Stupid Ass, Ran into something did you?");
+            JOptionPane.showMessageDialog(frame, "Te chocaste contra algo, give it another try :c");
         }
     }
 
@@ -81,4 +81,4 @@ public class TheArchitect extends JFrame {
     int globalTotalDimonds = 0;
     private int playerCordX;
     private int playerCordY;
-}//end class
+}
