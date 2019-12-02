@@ -35,7 +35,7 @@ public class Handler {
         JFileChooser chooser = new JFileChooser();
         int returnVal = chooser.showOpenDialog(chooser);
         if (returnVal == JFileChooser.APPROVE_OPTION) {
-            GameGui.getFileLoader().loadFile(chooser.getSelectedFile().getName());//load the file we need
+            GameGui.getFileLoader().loadFile(chooser.getSelectedFile().getName());
             GameGui.getArchitect().setExit(GameGui.getFileLoader().ExitXCord(), GameGui.getFileLoader().ExitYCord());
         }
     }

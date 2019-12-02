@@ -33,7 +33,7 @@ public class TheArchitect extends JFrame {
         }
 
         updatedMatrix = coordinates.getMatrix();
-    }//end method
+    }
 
     public void nextLevel(boolean goOrNot) {
         level = goOrNot;
