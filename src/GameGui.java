@@ -10,7 +10,7 @@ public class GameGui extends JFrame implements ActionListener {
     }
 
     public GameGui() {
-        super("Maze, a game of wondering");
+        super("Maze, a dumb game...");
         mainContainer = getContentPane();
         shagLabel = new JLabel("", new ImageIcon("yeababyyea.jpg"), JLabel.LEFT);
         mainContainer.add(shagLabel);
@@ -81,7 +81,7 @@ public class GameGui extends JFrame implements ActionListener {
                     break;
                 }
             }
-            JLabel diamondsReminder = new JLabel("You need" + Architect.getDimondsLeft() + "" + "more!!, U got this!", JLabel.CENTER);
+            JLabel diamondsReminder = new JLabel("You need " + Architect.getDimondsLeft() + " more diamonds!! U got this!", JLabel.CENTER);
             JPanel diamondsPanel = new JPanel();
             diamondsPanel.add(diamondsReminder);
             mainContainer.add(diamondsPanel, BorderLayout.SOUTH);

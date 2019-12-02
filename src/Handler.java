@@ -17,7 +17,7 @@ public class Handler {
 
     public static void insertUserName() {
         JOptionPane optionPane = new JOptionPane();
-        String name = optionPane.showInputDialog("Please Enter your Earth Name");
+        String name = optionPane.showInputDialog("Please Enter your Name..de quién más tho...");
         GameGui.setPlayerName(name);
     }
 
